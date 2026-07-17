@@ -50,6 +50,12 @@ If you’d like to collaborate or just say hi 👋, feel free to reach out!
 ## 🌟 Deployment
 Deployed on GitHub Pages. Every push to the `main` branch triggers an automatic build and publish through GitHub Actions.
 
+To make the contact form work after deployment, add these repository secrets in GitHub Settings > Secrets and variables > Actions:
+
+* `VITE_EMAILJS_SERVICE_ID`
+* `VITE_EMAILJS_TEMPLATE_ID`
+* `VITE_EMAILJS_PUBLIC_KEY`
+
 ## 🏁 License
 This project is open source and available under the MIT License. Feel free to fork, use, and build upon it ⭐
 
