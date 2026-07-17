@@ -19,7 +19,7 @@ Welcome to my personal portfolio website built with React.js, Framer Motion, and
 | **Animation** | Framer Motion |
 | **Contact Form** | EmailJS |
 | **Version Control**| Git & GitHub |
-| **Deployment** | GitHub Pages |
+| **Deployment** | Netlify / Vercel |
 
 ## ⚙️ Setup Instructions
 To run this project locally:
@@ -48,9 +48,13 @@ If you’d like to collaborate or just say hi 👋, feel free to reach out!
 * 💼 **LinkedIn:** [linkedin.com/in/pranav-n-j-2928932a0](https://www.linkedin.com/in/pranav-n-j-2928932a0/)
 
 ## 🌟 Deployment
-Deployed on GitHub Pages. Every push to the `main` branch triggers an automatic build and publish through GitHub Actions.
+This project is configured for Netlify and also works on Vercel.
 
-To make the contact form work after deployment, add these repository secrets in GitHub Settings > Secrets and variables > Actions:
+For Netlify, connect the repository, use `npm run build` as the build command, and `dist` as the publish directory. The included [`netlify.toml`](netlify.toml) already sets those values and keeps SPA routing working.
+
+For Vercel, import the repository and keep the default Vite build settings.
+
+To make the contact form work after deployment, add these environment variables in your hosting dashboard:
 
 * `VITE_EMAILJS_SERVICE_ID`
 * `VITE_EMAILJS_TEMPLATE_ID`
