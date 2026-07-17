@@ -19,7 +19,7 @@ Welcome to my personal portfolio website built with React.js, Framer Motion, and
 | **Animation** | Framer Motion |
 | **Contact Form** | EmailJS |
 | **Version Control**| Git & GitHub |
-| **Deployment** | Vercel / Netlify |
+| **Deployment** | GitHub Pages |
 
 ## ⚙️ Setup Instructions
 To run this project locally:
@@ -48,7 +48,7 @@ If you’d like to collaborate or just say hi 👋, feel free to reach out!
 * 💼 **LinkedIn:** [linkedin.com/in/pranav-n-j-2928932a0](https://www.linkedin.com/in/pranav-n-j-2928932a0/)
 
 ## 🌟 Deployment
-Deployed seamlessly on Vercel for continuous integration and fast CDN delivery. Every push to the main branch triggers an automatic rebuild and deployment.
+Deployed on GitHub Pages. Every push to the `main` branch triggers an automatic build and publish through GitHub Actions.
 
 ## 🏁 License
 This project is open source and available under the MIT License. Feel free to fork, use, and build upon it ⭐
