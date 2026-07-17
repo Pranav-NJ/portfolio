@@ -9,7 +9,7 @@ const AboutMe = () => {
       title: "B.Tech in Information Science and Engineering",
       institution: "SIT (Siddaganga Institute of Technology)",
       location: "Tumkur, Karnataka",
-      details: "3rd Year (Pursuing) | GPA: 9.38",
+      details: "3rd Year (Pursuing) | GPA: 9.36",
       year: "2023 – 2027",
     },
     {
@@ -66,11 +66,12 @@ const AboutMe = () => {
           transition={{ delay: 0.3 }}
         >
           Hi, I'm <strong className="text-white">Pranav N J</strong> — an aspiring{" "}
-          <strong className="text-white">Information Science Engineer</strong> and{" "}
-          <strong className="text-white">Full Stack Developer</strong> who loves turning ideas
-          into intelligent systems. I'm deeply fascinated by how data and
-          algorithms can shape the future of healthcare, automation, and
-          creativity in technology.
+<strong className="text-white">Information Science Engineer</strong> and{" "}
+<strong className="text-white">Full Stack Developer</strong> who loves
+building intelligent, scalable, and impactful digital solutions. I'm deeply
+fascinated by how  software, <strong className="text-gray-300">artificial intelligence</strong>, and{" "}
+<strong className="text-gray-300">cybersecurity</strong> can solve real-world
+challenges through innovation and data-driven engineering.
         </motion.p>
 
         <motion.p
@@ -80,11 +81,13 @@ const AboutMe = () => {
           viewport={{ once: true }}
           transition={{ delay: 0.4 }}
         >
-          Beyond code, I enjoy exploring design, experimenting with motion and
-          interaction, and finding ways to blend{" "}
-          <strong className="text-gray-300">artistic creativity</strong> with{" "}
-          <strong className="text-gray-300">technical precision</strong>. My goal is to build solutions
-          that not only perform — but also inspire.
+          Beyond coding, I enjoy designing intuitive user experiences, exploring emerging
+technologies, and continuously sharpening my problem-solving skills through
+hands-on projects. My goal is to create{" "}
+<strong className="text-gray-300">secure</strong>,{" "}
+<strong className="text-gray-300">high-performance</strong> solutions that not
+only solve meaningful problems—but also inspire innovation and make a lasting
+impact.
         </motion.p>
 
         {/* Education Section */}

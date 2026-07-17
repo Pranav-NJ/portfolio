@@ -78,11 +78,11 @@ export default function Home() {
           transition={{ duration: 1 }}
           className="flex-1 min-w-0 max-w-2xl flex flex-col justify-center text-center md:text-left"
         >
-          <h1 className="text-3xl md:text-5xl font-bold leading-tight mb-2 text-white">
-            Hi, I'm{' '}
+          <h1 className="text-4xl md:text-5xl font-bold leading-tight mb-2 text-white">
+            I'm{' '}
             <motion.span
               animate={{ backgroundPositionX: ['0%', '200%'] }}
-              transition={{ duration: 4, repeat: Infinity, ease: 'linear' }}
+              transition={{ duration: 5, repeat: Infinity, ease: 'linear' }}
               className="bg-clip-text text-transparent"
               style={{
                 backgroundImage: 'linear-gradient(90deg, #fff, var(--accent), #00b4ff, var(--accent), #fff)',
@@ -101,14 +101,14 @@ export default function Home() {
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.8 }}
-            className="flex flex-wrap gap-3 mt-5 justify-center md:justify-start"
+            className="flex flex-wrap gap-3 mt-6 justify-center md:justify-start"
           >
             {professions.map((role, i) => (
               <motion.div
                 key={i}
-                whileHover={{ scale: 1.05, background: 'linear-gradient(90deg,var(--accent),#00b4ff)' }}
+                whileHover={{ scale: 1.05, y: -2, background: 'linear-gradient(90deg,var(--accent),#00b4ff)', boxShadow: '0 0 20px rgba(0,255,200,0.3)' }}
                 transition={{ type: 'spring', stiffness: 200 }}
-                className="border border-white/20 px-5 py-2 rounded-full text-sm text-white/85 cursor-default bg-white/5 backdrop-blur-sm hover:border-transparent transition-all"
+                className="border border-white/20 px-5 py-2 rounded-full text-sm text-white/85 cursor-default bg-white/10 backdrop-blur-sm hover:border-transparent transition-all"
               >
                 {role}
               </motion.div>
@@ -119,21 +119,21 @@ export default function Home() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 1 }}
-            className="grid grid-cols-1 sm:grid-cols-3 gap-3 sm:gap-4 mt-6"
+            className="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-8"
           >
             {[
               { label: 'Location', value: 'Tumkur, India' },
-              { label: 'Expertise', value: 'Full Stack Development\nProblem Solving' },
-              { label: 'Contact', value: 'pranav984530@gmail.com' },
+              { label: 'Expertise', value: 'Full Stack & AI/ML' },
+              { label: 'Contact', value: 'pranav984530@gmail.com\n+91 9481578981' },
             ].map((info, i) => (
               <motion.div
                 key={i}
-                whileHover={{ y: -4, scale: 1.03 }}
+                whileHover={{ y: -5, scale: 1.03, boxShadow: '0 10px 30px rgba(0,0,0,0.2)' }}
                 transition={{ type: 'spring', stiffness: 250 }}
-                className="bg-white/5 backdrop-blur-sm rounded-lg sm:rounded-xl p-3 sm:p-4 text-center shadow-lg border border-white/5 hover:border-cyan-500/30 transition-all"
+                className="bg-white/5 backdrop-blur-md rounded-lg sm:rounded-xl p-4 text-center shadow-lg border border-white/10 hover:border-cyan-500/50 transition-all"
               >
-                <strong className="text-xs sm:text-sm text-cyan-400">{info.label}</strong>
-                <p className="text-xs sm:text-xs text-white/60 mt-1 whitespace-pre-line">{info.value}</p>
+                <strong className="text-sm text-cyan-400 font-semibold">{info.label}</strong>
+                <p className="text-sm text-white/70 mt-1 whitespace-pre-line">{info.value}</p>
               </motion.div>
             ))}
           </motion.div>
@@ -145,9 +145,9 @@ export default function Home() {
         initial={{ opacity: 0, y: 10 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 1.2 }}
-        className="text-center mt-4"
+        className="text-center mt-12"
       >
-        <h2 className="text-xl font-semibold mb-4 text-white/90">Connect</h2>
+        <h2 className="text-xl font-semibold mb-5 text-white/90">Let's Connect</h2>
         <div className="flex flex-wrap justify-center gap-6">
           {quickLinks.map((item, i) => (
             <motion.a
@@ -156,14 +156,14 @@ export default function Home() {
               title={item.title}
               target="_blank"
               rel="noopener noreferrer"
-              whileHover={{ scale: 1.15, rotate: 5 }}
-              transition={{ type: 'spring', stiffness: 250 }}
+              whileHover={{ scale: 1.2, rotate: 0, y: -5 }}
+              transition={{ type: 'spring', stiffness: 300 }}
             >
               <motion.img
                 src={item.img}
                 alt={item.title}
-                whileHover={{ filter: 'drop-shadow(0 0 15px var(--accent)) brightness(1.2)' }}
-                className="w-12 h-12 rounded-full object-cover brightness-90 transition-all duration-300"
+                whileHover={{ filter: 'drop-shadow(0 0 15px var(--accent)) brightness(1.3)' }}
+                className="w-14 h-14 rounded-full object-cover bg-white/10 p-2 backdrop-blur-sm border border-white/10 brightness-90 transition-all duration-300"
               />
             </motion.a>
           ))}
